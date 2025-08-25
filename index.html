@@ -12,36 +12,59 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Friday 10:57, few clouds
-          <br />
-          Humidity: 57%, Wind: 4.63km/h
-        </p>
-      </div>
-      <div>🌥️ 12°C</div>
-    </main>
-    <footer>
-      This application was coded by
-      <a href="https://github.com/juliarams1" target="_blank">
-        Julia Ramalepe </a
-      >, is
-      <a href="https://github.com/juliarams1/my-github-project1" target="_blank"
-        >open-sourced on Github
-      </a>
-      and is
-      <a href="https://jules-weather-application.netlify.app/" target="_blank">
-        hosted on Netlify.
-      </a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              Friday 10:57, few clouds
+              <br />
+              Humidity: <strong>57% </strong> , Wind: <strong>4.63km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-container">
+            <div class="weather-app-icon">🌥️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/juliarams1" target="_blank">
+          Julia Ramalepe </a
+        >, is
+        <a
+          href="https://github.com/juliarams1/my-github-project1"
+          target="_blank"
+          >open-sourced on Github
+        </a>
+        and is
+        <a
+          href="https://jules-weather-application.netlify.app/"
+          target="_blank"
+        >
+          hosted on Netlify.
+        </a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
